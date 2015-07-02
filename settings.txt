@@ -1,0 +1,3 @@
+-- charcoal as a separate node
+-- false does not "clutter" your server
+charcoal.separate_node = true

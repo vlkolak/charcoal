@@ -8,7 +8,8 @@ License: WTFPL
 
 Dependencies: default mod (found in minetest_game)
 
-Report bugs or request help on the forum topic.
+Report bugs or request help here:
+https://github.com/vlkolak/charcoal
 
 Installation
 ------------

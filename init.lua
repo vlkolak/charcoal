@@ -1,4 +1,9 @@
--- registers charcoal. like coal. coal group.
+-- Charcoal mod by vlkolak - 2015
+--
+-- This mod supplies various charcoal related recipes.
+--
+-- License: WTFPL
+--
 
 print("MOD: charcoal loading")
 

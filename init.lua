@@ -8,7 +8,7 @@
 print("MOD: charcoal loading")
 
 charcoal = {}
-charcoal.version = "0.2.0"
+charcoal.version = "0.2.1"
 charcoal.lump = "charcoal:charcoal_lump"
 
 charcoal.worldpath = minetest.get_worldpath()

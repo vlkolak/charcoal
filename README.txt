@@ -3,7 +3,7 @@ Charcoal
 
 Adds renewable coal : charcoal.
 
-Version: 0.2.0
+Version: 0.2.1
 License: WTFPL
 
 Dependencies: default mod (found in minetest_game)

@@ -43,8 +43,13 @@ minetest.register_craft({
 
 -- the dye ALREADY uses group:coal !
 
--- if module tnt exists then you get your daily destruction
-if minetest.get_modpath("tnt") then
+-- if module tnt exists and is set to active then you get your daily destruction
+-- use the check from the tnt module itself
+local singleplayer = minetest.is_singleplayer()
+local setting = minetest.setting_getbool("enable_tnt")
+if minetest.get_modpath("tnt") and
+  (singleplayer and minetest.setting_getbool("enable_tnt") ~= false or
+  not singleplayer and minetest.setting_getbool("enable_tnt")) then
     minetest.register_craft({
             output = "tnt:gunpowder",
             type = "shapeless",

@@ -28,14 +28,18 @@ else
 end
 
 -- char some tree to get some charcoal
+if charcoal.lump_per_tree >= 4 then
+    minetest.register_craft({
+            type = "cooking",
+            cooktime = charcoal.cooking_time,
+            output = charcoal.lump .. " " .. tostring(math.floor(charcoal.lump_per_tree / 4)),
+            recipe = "group:wood",
+    })
+end
 minetest.register_craft({
         type = "cooking",
-        output = charcoal.lump,
-        recipe = "group:wood",
-})
-minetest.register_craft({
-        type = "cooking",
-        output = charcoal.lump .. " 4",
+        cooktime = charcoal.cooking_time,
+        output = charcoal.lump .. " " .. tostring(charcoal.lump_per_tree),
         recipe = "group:tree",
 })
 

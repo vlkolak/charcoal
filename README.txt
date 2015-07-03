@@ -3,12 +3,13 @@ Charcoal
 
 Adds renewable coal : charcoal.
 
-Version: 0.1.0
+Version: 0.2.0
 License: WTFPL
 
 Dependencies: default mod (found in minetest_game)
 
-Report bugs or request help on the forum topic.
+Report bugs or request help here:
+https://github.com/vlkolak/charcoal
 
 Installation
 ------------
@@ -36,7 +37,11 @@ group:coal, which is good.
 
 If charcoal.separate_node = false, then charcoal IS coal, and you won't see any difference,
 except for the ability to char group:wood and group:tree - which should be any tree and wood -
-in your furnace, to gain some lumps (1 for wood, 4 for tree).
+in your furnace, to gain some lumps.
+
+charcoal.cooking_time is charcoal cooking time in seconds.
+charcoal.lump_per_tree is how many lumps you get per tree - below 4, the wood planks
+to charcoal recipe is disabled.
 
 Recipes
 -------
